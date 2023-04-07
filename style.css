@@ -1,8 +1,15 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .card{
-    width: 90%;
-    max-width: 450px;
-    background: linear-gradient(135deg, red, yellow);
-    /* color: #fff; */
+    width: 100%;
+    max-width: 45vh;
+    background: linear-gradient(135deg, rgb(109, 185, 8), rgb(206, 206, 31));
+    color: #fff;
     margin: 5% auto 0;
     border-radius: 20px;
     padding: 40px 35px;
@@ -36,18 +43,59 @@
     background-color: #ebfffc;
     color: black;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
+    width: 5vh;
+    height: 5vh;
     cursor: pointer;
     align-items: center;
 }
 
 .icon i{
     margin-top: 40%;
+    transition: 1s;
+    color: #555;
+}
+
+.icon i:hover {
+    transform: scale(1.5);
 }
 
 .weather img{
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 20%;
     margin-top: 7%;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh 2vh 0;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /* width: 100%; */
+    /* margin: 0 5%; */
+}
+
+.col i{
+    margin-right: 10px;
+}
+
+.col p{
+    margin: 1vh;
+}
+
+.humidity, .wind{
+    font-size: 2.5vh;
+}
+
+.temperature{
+    font-size: 7vh;
+}
+
+.city{
+    font-size: 4.5vh;
 }
